@@ -70,9 +70,10 @@ else:
         "Single Score Median: "
         + str(
             (
-                singleScores[len(singleScores) / 2]
-                + singleScores[(len(singleScores) / 2) + 1]
+                singleScores[int(len(singleScores) / 2)]
+                + singleScores[int(len(singleScores) / 2) + 1]
             )
+            / 2
         )
     )
 
@@ -83,9 +84,10 @@ else:
         "Multi Score Median: "
         + str(
             (
-                multiScores[len(multiScores) / 2]
-                + multiScores[(len(multiScores) / 2) + 1]
+                multiScores[int(len(multiScores) / 2)]
+                + multiScores[int(len(multiScores) / 2) + 1]
             )
+            / 2
         )
     )
 
